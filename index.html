@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS + JS Chat Uygulaması</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>Sohbetler</h2>
+    <div class="chat-item active" data-chat="levent">Levent</div>
+    <div class="chat-item" data-chat="asya">Asya</div>
+    <div class="chat-item" data-chat="umut">Umut</div>
+
+    <div class="theme-toggle">
+      <input type="checkbox" id="darkModeToggle">
+      <label for="darkModeToggle">🌙 Karanlık Mod</label>
+    </div>
+  </aside>
+
+  <main class="chat-area">
+    <div class="chat" id="levent">
+      <div class="chat-header">Levent ile Sohbet</div>
+      <div class="chat-messages" id="leventMessages"></div>
+      <div class="chat-input">
+        <input type="text" placeholder="Mesaj yaz...">
+        <button>Gönder</button>
+      </div>
+    </div>
+
+    <div class="chat" id="asya" style="display:none;">
+      <div class="chat-header">Asya ile Sohbet</div>
+      <div class="chat-messages" id="asyaMessages"></div>
+      <div class="chat-input">
+        <input type="text" placeholder="Mesaj yaz...">
+        <button>Gönder</button>
+      </div>
+    </div>
+
+    <div class="chat" id="umut" style="display:none;">
+      <div class="chat-header">Umut ile Sohbet</div>
+      <div class="chat-messages" id="umutMessages"></div>
+      <div class="chat-input">
+        <input type="text" placeholder="Mesaj yaz...">
+        <button>Gönder</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
